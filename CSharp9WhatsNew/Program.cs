@@ -26,7 +26,14 @@ namespace CSharp9WhatsNew
             
             var bookRecord = new BaseBookRecord("A Man Called Ove", "Fredrik Backman", 2012, 25); // new approach
             // bookRecord.Title = "Anxious People"; // error
+            var bookRecord2 = new BaseBookRecord("A Man Called Ove", "Fredrik Backman", 2012, 25);
+            var bookRecord3 = bookRecord2 with {Title = "Anxious People"};
+            
             Console.WriteLine(bookRecord);
+            Console.WriteLine(bookRecord2);
+            Console.WriteLine(bookRecord3);
+            
+            Console.WriteLine(bookRecord == bookRecord2);
 
             var book = new Book // old approach
             {
