@@ -8,7 +8,7 @@
         {
         }
 
-        // old approach: much boiler plate code to support construction
+        // Old Approach: much boilerplate code to support construction
         public Person(string firstName, string lastName)
         {
             FirstName = firstName;
