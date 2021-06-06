@@ -6,7 +6,19 @@
     // Generated as a class in IL.
     public record BaseBookRecord(string Title, string AuthorName, int Year, decimal Price);
 
-    // Records cannot inherit from classes, unless the class is object, and classes cannot inherit from records.
+    // Record can declare a body
+    public record BaseBookRecord2(string Title, string AuthorName)
+    {
+        public int Year { get; init; }
+
+        public decimal Price { get; init; }
+
+        public void SomeMethod()
+        {
+        }
+    }
+
+// Records cannot inherit from classes, unless the class is object, and classes cannot inherit from records.
     // Records can inherit from other records.
     public record DerivedBookRecord(string Title, string AuthorName, int Year, decimal Price, string Genre)
         : BaseBookRecord(Title, AuthorName, Year, Price);
