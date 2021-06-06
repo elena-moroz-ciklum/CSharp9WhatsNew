@@ -24,7 +24,7 @@ namespace CSharp9WhatsNew
 
             #region Records
             
-            var bookRecord = new BookRecord("A Man Called Ove", "Fredrik Backman", 2012, 25); // new approach
+            var bookRecord = new BaseBookRecord("A Man Called Ove", "Fredrik Backman", 2012, 25); // new approach
             // bookRecord.Title = "Anxious People"; // error
             Console.WriteLine(bookRecord);
 
